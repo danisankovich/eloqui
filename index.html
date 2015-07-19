@@ -1,9 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <p>This is where the definition will go</p>
-  </body>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="test.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <header>
+    <h1>Eloqui</h1>
+    <h3>The Tool for Definitions and Translations</h3>
+  </header>
+  <div class='content'>
+    <div class='row'>
+      <div class='col-sm-8 text'>
+        <div class='row'>
+          <div class='col-sm-4'>
+            <form id="language">
+              <span>&nbsp; </span><span class='languagetitle'>Pick Language to Translate/Define: </span>
+              <br>
+              <span>&nbsp; </span><input class='lang' type="radio" name="language" value='eng' checked>&nbsp;English<span>&nbsp; </span>
+              <span>&nbsp; </span><input class='lang' type="radio" name="language" value='es'>&nbsp;Espa&ntilde;ol<span>&nbsp; </span>
+              <span>&nbsp; </span><input class='lang' type="radio" name="language" value='fr'>&nbsp;Fran&ccedil;ais<span>&nbsp; </span>
+            </form>
+          </div>
+        </div>
+        <div class='samples'>
+          <h2>English Sample: </h2>
+          <p>IDO1 (indoleamine 2,3-dioxygenase 1) is a member of a unique class of
+            mammalian haem dioxygenases that catalyse the oxidative catabolism of
+            the least-abundant essential amino acid, L-Trp (L-tryptophan), along
+            the kynurenine pathway. Significant increases in knowledge have been
+            recently gained with respect to understanding the fundamental
+            biochemistry of IDO1 including its catalytic reaction mechanism, the
+            scope of enzyme reactions it catalyses, the biochemical mechanisms
+            controlling IDO1 expression and enzyme activity, and the discovery of
+            enzyme inhibitors. Major advances in understanding the roles of IDO1 in
+            physiology and disease have also been realised.
+
+          </p>
+          <h2>Spanish Sample: </h2>
+          <p>
+            Muchos a&ntilde;os despu&eacute;s, frente al pelot&oacute;n de fusilamiento, el coronel Aureliano
+            Buend&iacute;a hab&iacute;a de recordar aquella tarde remota en que su padre lo llev&oacute; a conocer el hielo.
+            Con estas palabras empieza una novela ya legendaria en los anales de la literatura universal,
+            una de las aventuras literarias
+          </p>
+          <h2>French Sample: </h2>
+          <p>
+            Ma&icirc;tre Corbeau, sur un arbre perch&eacute;,
+            Tenait en son bec un fromage.! bonjour, Monsieur du Corbeau.
+            Que vous joli ! que vous me semblez beau !
+            Sans mentir, si votre ramage
+            A ces mots le Corbeau ne se sent pas de joie ;
+            Et pour montrer sa belle voix,
+            Il ouvre un large bec, laisse tomber sa proie.
+            Apprenez que tout flatteur
+            Le Corbeau, honteux et confus
+          </p>
+        </div>
+      </div>
+      <div class='col-sm-3 defbox'>
+        <p><span id="definition"></span></p>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
