@@ -46,8 +46,19 @@ h3 {
   border: 1px black solid;
   border-width: 5px;
   border-radius: 15px;
-  height: 100vh;
+  height: 50vh;
   margin-left: 10px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+}
+
+.suggestionbox {
+  border: 1px black solid;
+  border-width: 5px;
+  border-radius: 15px;
+  height: 50vh;
+  margin-left: 10px;
+  overflow-y: scroll;
 }
 
 .text {
@@ -56,4 +67,35 @@ h3 {
 
 .highlight {
   background-color: yellow;
+}
+
+h4 {
+  text-align: center;
+}
+
+p.defspacing {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+li.defspacing {
+  margin-left: -35px;
+  margin-right: 5px;
+  list-style-type: none;
+}
+
+#footer {
+  float:left;
+  padding:15px 0;
+  min-width:100%;
+  color: black;
+  height: 85px;
+  background-color: #dad7c9;
+  margin-top: 20px;
+}
+
+.footernotes {
+  float: right;
+  margin-right: 60px;
+  font-size: 20px;
 }

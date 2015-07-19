@@ -1,6 +1,14 @@
+var myapp = angular.module("Eloqui", []);
+
+myapp.controller('MainCtrl', ['$scope',
+    function ($scope) {
+      console.log("hello");
+    }
+]);
+
 $(document).ready(function() {
   var word="";
-  var lang = 'eng'
+  var lang = 'eng';
 
   $('#language').change(function(){
     lang = $('input:radio[name=language]:checked').val();
@@ -23,7 +31,7 @@ $(document).ready(function() {
         if (wordArray.indexOf(word) === -1){
           wordArray.push(word);
           var definition = response.tuc[0].meanings[0].text;
-          $('#definition').append("<span id='word'>" + word + "</span>" + " : " + definition + "<br>");
+          $('#definition').prepend("<span id='word'>" + word + "</span>" + " : " + definition + "<br>");
           console.log(definition);
         };
       });
@@ -44,7 +52,7 @@ $(document).ready(function() {
         if (wordArray.indexOf(word) === -1){
           wordArray.push(word);
           var definition = response.tuc[0].meanings[0].text;
-          $('#definition').append("<span id='word'>" + word + "</span>" + " : " + definition + "<br>");
+          $('#definition').prepend("<span id='word'>" + word + "</span>" + " : " + definition + "<br>");
           console.log(definition);
         };
       });
@@ -65,7 +73,7 @@ $(document).ready(function() {
         if (wordArray.indexOf(word) === -1){
           wordArray.push(word);
           var definition = response.tuc[0].meanings[0].text;
-          $('#definition').append("<span id='word'>" + word + "</span>" + " : " + definition + "<br>");
+          $('#definition').prepend("<span id='word'>" + word + "</span>" + " : " + definition + "<br>");
           console.log(definition);
         };
       });
@@ -86,7 +94,7 @@ $(document).ready(function() {
         if (wordArray.indexOf(word) === -1){
           wordArray.push(word);
           var definition = response.tuc[0].meanings[0].text;
-          $('#definition').append("<span id='word'>" + word + "</span>" + " : " + definition + "<br>");
+          $('#definition').prepend("<span id='word'>" + word + "</span>" + " : " + definition + "<br>");
           console.log(definition);
         };
       });
@@ -107,7 +115,7 @@ $(document).ready(function() {
         if (wordArray.indexOf(word) === -1){
           wordArray.push(word);
           var definition = response.tuc[0].meanings[0].text;
-          $('#definition').append("<span id='word'>" + word + "</span>" + " : " + definition + "<br>");
+          $('#definition').prepend("<span id='word'>" + word + "</span>" + " : " + definition + "<br>");
           console.log(definition);
         };
       });
@@ -128,7 +136,7 @@ $(document).ready(function() {
         if (wordArray.indexOf(word) === -1){
           wordArray.push(word);
           var definition = response.tuc[0].meanings[0].text;
-          $('#definition').append("<span id='word'>" + word + "</span>" + " : " + definition + "<br>");
+          $('#definition').prepend("<span id='word'>" + word + "</span>" + " : " + definition + "<br>");
           console.log(definition);
         };
       });
@@ -149,7 +157,7 @@ $(document).ready(function() {
         if (wordArray.indexOf(word) === -1){
           wordArray.push(word);
           var definition = response.tuc[0].meanings[0].text;
-          $('#definition').append("<span id='word'>" + word + "</span>" + " : " + definition + "<br>");
+          $('#definition').prepend("<span id='word'>" + word + "</span>" + " : " + definition + "<br>");
           console.log(definition);
         };
       });
